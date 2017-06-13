@@ -1,0 +1,16 @@
+<div id="app">
+  <div id="range">
+    <label for="r"><span>R</span><input type="range" value="50" min="0" max="255" name="r" v-model="r_value"/></label>
+    <label for="g"><span>G</span><input type="range"  min="0" max="255" value="50" name="g"  v-model="g_value"/></label>
+
+    <label for="b"><span>B</span><input type="range"  min="0" max="255" value="50"  name="b"  v-model="b_value"/></label>
+  </div>
+
+  <div class="demo">
+    <h2>BackgroundColor: {{r_value}}, {{g_value}}, {{b_value}}</h2>
+    <div class="color-block">
+      <div class="color main-color"></div>
+    </div>
+  </div>
+</div>
+
